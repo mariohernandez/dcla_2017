@@ -1,0 +1,13 @@
+.social-icons__items {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0 0; }
+
+.social-icons__item {
+  margin: 0 1rem; }
+  .social-icons__item--first {
+    margin-left: 0; }
+
+.social-icons__icon {
+  width: 32px;
+  height: 32px; }

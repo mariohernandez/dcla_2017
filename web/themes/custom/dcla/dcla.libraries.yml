@@ -29,3 +29,18 @@ global:
 #   dependencies:
 #     - dcla/clearfix
 #     - dcla/visually-hidden
+
+eyebrow:
+  css:
+    component:
+      dist/css/eyebrow.css: {}
+
+social-icons:
+  css:
+    component:
+      dist/css/social-icons.css: {}
+
+sponsor:
+  css:
+    component:
+      dist/css/sponsor.css: {}

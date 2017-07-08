@@ -1,0 +1,26 @@
+.sponsor {
+  background: #F9F9F9;
+  max-height: 583px;
+  overflow: hidden; }
+  .sponsor::after {
+    content: '';
+    display: table;
+    clear: both; }
+
+.sponsor__media,
+.sponsor__text {
+  float: left; }
+
+.sponsor__media {
+  background: #B5EBEB;
+  overflow: hidden;
+  line-height: 0.8;
+  max-width: 450px; }
+
+.sponsor__text {
+  padding: 5rem 4rem 6rem 6rem;
+  width: calc(100% - 450px); }
+
+.sponsor__heading {
+  font-weight: bold;
+  margin-bottom: 2rem; }

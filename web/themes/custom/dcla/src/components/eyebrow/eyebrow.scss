@@ -1,0 +1,31 @@
+// Eyebrow
+//
+// This is the eyebrow component. It's an example.
+//
+// .eyebrow--light - A variation of eyebrow with all elements.
+//
+// Markup: eyebrow.twig
+//
+// Style guide: Components.eyebrow
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.eyebrow {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  line-height: 1;
+  background: darken($color-alabaster, 25%);
+  border: 1px solid transparent;
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  margin-bottom: 4rem;
+
+  &.eyebrow--light {
+    background: $color-white;
+    border: 1px solid darken($color-alabaster, 15%);
+    color: darken($color-alabaster, 25%);
+  }
+}

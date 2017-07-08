@@ -1,0 +1,28 @@
+// Social Icons
+//
+// This is the social-icons component. It's an example.
+//
+// Markup: social-icons.twig
+//
+// Style guide: Components.Social Icons
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.social-icons__items {
+  display: flex;
+  margin: 2rem 0 0;
+}
+
+.social-icons__item {
+  margin: 0 1rem;
+
+  &--first {
+    margin-left: 0;
+  }
+}
+
+.social-icons__icon {
+  width: 32px;
+  height: 32px;
+}

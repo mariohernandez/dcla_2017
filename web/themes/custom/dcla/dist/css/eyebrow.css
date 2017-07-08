@@ -1,0 +1,15 @@
+.eyebrow {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  line-height: 1;
+  background: #b9b9b9;
+  border: 1px solid transparent;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  margin-bottom: 4rem; }
+  .eyebrow.eyebrow--light {
+    background: #FFF;
+    border: 1px solid lightgray;
+    color: #b9b9b9; }
