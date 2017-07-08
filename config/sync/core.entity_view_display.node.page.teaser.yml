@@ -4,12 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.page.body
-    - field.field.node.page.field_sponsor
     - node.type.page
   module:
-    - entity_reference_revisions
-    - text
     - user
 _core:
   default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
@@ -18,14 +14,6 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 0
-    region: content
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
   field_sponsor:
     type: entity_reference_revisions_entity_view
     weight: 1
@@ -40,4 +28,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_card: true
