@@ -70,8 +70,21 @@
  *   in different view modes.
  */
 #}
-<article{{ attributes }}>
+{# {{ kint($node->get('field_sponsor_image')->entity) }} #}
+{# Sets variables for sponsor and social icons paragraphs #}
+{% set sponsor = content.field_sponsor_card.0['#paragraph'] %}
+{% set social_icons = content.field_sponsor_social_icons.0['#paragraph'].field_social_links %}
 
+{# Loops through the social icons array and assigns a variable to the array
+  which later will be passed to the component items #}
+{% set icons = [] %}
+{% for social_icon in social_icons %}
+    {% set url = social_icon.uri %}
+    {% set icon = social_icon.title %}
+    {% set icons = icons|merge([{'url': url, 'icon': icon}]) %}
+{% endfor %}
+
+<article{{ attributes }}>
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
@@ -91,7 +104,15 @@
   {% endif %}
 
   <div{{ content_attributes }}>
-    {{ content }}
+    {%
+      include '@dcla/sponsor/sponsor.twig' with {
+        'image': sponsor.field_sponsor_image.entity.uri.value,
+        'eyebrow': sponsor.field_sponsor_eyebrow.value,
+        'heading': sponsor.field_sponsor_title.value,
+        'body': sponsor.field_sponsor_body.value,
+        'items': icons,
+      } only
+    %}
   </div>
 
 </article>
