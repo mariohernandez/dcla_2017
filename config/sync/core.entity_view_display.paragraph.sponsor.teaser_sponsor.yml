@@ -1,0 +1,47 @@
+uuid: 6a0d46bd-c0c7-4542-94e5-244eae7a58f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser_sponsor
+    - field.field.paragraph.sponsor.field_sponsor_body
+    - field.field.paragraph.sponsor.field_sponsor_eyebrow
+    - field.field.paragraph.sponsor.field_sponsor_image
+    - field.field.paragraph.sponsor.field_sponsor_social_icons
+    - field.field.paragraph.sponsor.field_sponsor_title
+    - paragraphs.paragraphs_type.sponsor
+  module:
+    - image
+id: paragraph.sponsor.teaser_sponsor
+targetEntityType: paragraph
+bundle: sponsor
+mode: teaser_sponsor
+content:
+  field_sponsor_eyebrow:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sponsor_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_sponsor_title:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_sponsor_body: true
+  field_sponsor_social_icons: true

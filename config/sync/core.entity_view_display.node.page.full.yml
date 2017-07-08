@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.page.body
-    - field.field.node.page.field_card
+    - field.field.node.page.field_sponsor
     - node.type.page
   module:
     - entity_reference_revisions
@@ -25,12 +25,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_card:
+  field_sponsor:
     type: entity_reference_revisions_entity_view
     weight: 1
     label: hidden
     settings:
-      view_mode: full_card
+      view_mode: full_sponsor
       link: ''
     third_party_settings: {  }
     region: content

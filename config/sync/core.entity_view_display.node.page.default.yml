@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
-    - field.field.node.page.field_card
+    - field.field.node.page.field_sponsor
     - node.type.page
   module:
     - entity_reference_revisions
@@ -24,7 +24,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_card:
+  field_sponsor:
     type: entity_reference_revisions_entity_view
     weight: 102
     label: hidden

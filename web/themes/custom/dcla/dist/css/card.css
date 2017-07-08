@@ -1,31 +1,31 @@
-.card {
+.sponsor {
   background: #F9F9F9;
   max-height: 583px;
   overflow: hidden; }
-  .card::after {
+  .sponsor::after {
     content: '';
     display: table;
     clear: both; }
 
-.card__media,
-.card__text {
+.sponsor__media,
+.sponsor__text {
   float: left; }
 
-.card__media {
+.sponsor__media {
   background: #B5EBEB;
   overflow: hidden;
   line-height: 0.8;
   max-width: 450px; }
 
-.card__text {
+.sponsor__text {
   padding: 5rem 4rem 6rem 6rem;
   width: calc(100% - 450px); }
 
-.card__heading {
+.sponsor__heading {
   font-weight: bold;
   margin-bottom: 2rem; }
 
-.card__eyebrow {
+.sponsor__eyebrow {
   display: inline-block;
   padding: 0.5rem 0.8rem;
   line-height: 1;
@@ -36,16 +36,16 @@
   white-space: nowrap;
   margin-bottom: 4rem; }
 
-.card__social-items {
+.sponsor__social-items {
   display: -ms-flexbox;
   display: flex;
   margin: 2rem 0 0; }
 
-.card__social--item {
+.sponsor__social--item {
   margin: 0 1rem; }
-  .card__social--item:first-child {
+  .sponsor__social--item:first-child {
     margin-left: 0; }
 
-.card__icon {
+.sponsor__icon {
   width: 32px;
   height: 32px; }
