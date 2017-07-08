@@ -1,0 +1,10 @@
+uuid: 7ffb8668-d5c9-41a2-82c4-e9df82117a2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.sponsor_minimum
+label: 'Sponsor Minimum'
+targetEntityType: node
+cache: true

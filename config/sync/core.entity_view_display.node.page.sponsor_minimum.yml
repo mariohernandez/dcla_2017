@@ -1,9 +1,9 @@
-uuid: e89b8c28-bbb9-423f-823f-606b6823169f
+uuid: 98d480d1-b955-4c14-a08a-069196fe851f
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.sponsor_minimum
     - field.field.node.page.field_social_links
     - field.field.node.page.field_sponsor
     - node.type.page
@@ -11,23 +11,23 @@ dependencies:
     - entity_reference_revisions
     - user
 _core:
-  default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
-id: node.page.teaser
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.sponsor_minimum
 targetEntityType: node
 bundle: page
-mode: teaser
+mode: sponsor_minimum
 content:
   field_sponsor:
     type: entity_reference_revisions_entity_view
-    weight: 1
-    region: content
+    weight: 0
     label: hidden
     settings:
-      view_mode: teaser_sponsor
+      view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
   links:
-    weight: 2
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }

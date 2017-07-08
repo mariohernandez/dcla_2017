@@ -1,11 +1,14 @@
 uuid: c25aa049-e2b3-42d6-95ec-d3e7ea5e4e1a
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - field.field.node.page.field_social_links
+    - field.field.node.page.field_sponsor
     - node.type.page
   module:
+    - entity_reference_revisions
     - user
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
@@ -30,3 +33,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_card: true
+  field_social_links: true
