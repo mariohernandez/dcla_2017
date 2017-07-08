@@ -38,6 +38,27 @@
  * @ingroup themeable
  */
 #}
+
+{%
+  set icons = [
+    {
+      url: content.field_social_links.0['#url'].uri,
+      icon: content.field_social_links.0['#title'],
+    },
+    {
+      url: content.field_social_links.1['#url'].uri,
+      icon: content.field_social_links.1['#title'],
+    },
+    {
+      url: content.field_social_links.2['#url'].uri,
+      icon: content.field_social_links.2['#title'],
+    },
+    {
+      url: content.field_social_links.3['#url'].uri,
+      icon: content.field_social_links.3['#title'],
+    }
+  ]
+%}
 {%
   set classes = [
     'paragraph',
@@ -45,10 +66,15 @@
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   ]
 %}
+
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content }}
+      {%
+        include '@dcla/social-icons/social-icons.twig' with {
+          'items': icons,
+        } only
+      %}
     {% endblock %}
   </div>
 {% endblock paragraph %}

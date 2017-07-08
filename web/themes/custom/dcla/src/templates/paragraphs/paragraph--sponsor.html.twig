@@ -45,13 +45,18 @@
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
   ]
 %}
+
 {% block paragraph %}
-  {%
-    include '@dcla/sponsor/sponsor.twig' with {
-      'image': content.field_sponsor_image,
-      'eyebrow': content.field_sponsor_eyebrow.0['#context'].value,
-      'heading': content.field_sponsor_title.0['#context'].value,
-      'body': content.field_sponsor_body.0['#text'],
-    } only
-  %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {%
+        include '@dcla/sponsor/sponsor.twig' with {
+          'image': content.field_sponsor_image,
+          'eyebrow': content.field_sponsor_eyebrow.0['#context'].value,
+          'heading': content.field_sponsor_title.0['#context'].value,
+          'body': content.field_sponsor_body.0['#text'],
+        } only
+      %}
+    {% endblock %}
+  </div>
 {% endblock paragraph %}
