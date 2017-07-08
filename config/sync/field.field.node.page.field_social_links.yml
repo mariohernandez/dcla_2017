@@ -1,0 +1,33 @@
+uuid: a711e0d7-f8b0-42f7-b064-c27fb26a69f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_links
+    - node.type.page
+    - paragraphs.paragraphs_type.social_icons
+  module:
+    - entity_reference_revisions
+id: node.page.field_social_links
+field_name: field_social_links
+entity_type: node
+bundle: page
+label: 'Social Links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social_icons: social_icons
+    target_bundles_drag_drop:
+      social_icons:
+        enabled: true
+        weight: 3
+      sponsor:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

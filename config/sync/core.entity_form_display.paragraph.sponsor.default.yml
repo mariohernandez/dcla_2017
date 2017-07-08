@@ -1,4 +1,4 @@
-uuid: 0d01ff2c-8839-4a9c-9efe-1231826571b8
+uuid: 71888208-72f3-4fad-8468-7a9bf3831d7c
 langcode: en
 status: true
 dependencies:
@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.sponsor.field_sponsor_eyebrow
     - field.field.paragraph.sponsor.field_sponsor_image
     - field.field.paragraph.sponsor.field_sponsor_title
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.sponsor
   module:
     - image
@@ -17,47 +18,38 @@ bundle: sponsor
 mode: default
 content:
   field_sponsor_body:
-    weight: 8
-    label: hidden
-    settings: {  }
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
-    type: text_default
+    type: text_textarea
     region: content
   field_sponsor_eyebrow:
-    weight: 6
-    label: hidden
+    weight: 1
     settings:
-      link_to_entity: false
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: string
+    type: string_textfield
     region: content
   field_sponsor_image:
-    weight: 5
-    label: hidden
+    weight: 3
     settings:
-      image_style: ''
-      image_link: ''
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image
-    region: content
-  field_sponsor_social_icons:
-    weight: 4
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
+    type: image_image
     region: content
   field_sponsor_title:
-    weight: 7
-    label: hidden
+    weight: 0
     settings:
-      link_to_entity: false
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: string
+    type: string_textfield
     region: content
-hidden: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

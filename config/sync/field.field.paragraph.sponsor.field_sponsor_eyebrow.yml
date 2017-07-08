@@ -1,0 +1,19 @@
+uuid: 86d78044-6e6c-4d5d-961b-7f605694a58c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sponsor_eyebrow
+    - paragraphs.paragraphs_type.sponsor
+id: paragraph.sponsor.field_sponsor_eyebrow
+field_name: field_sponsor_eyebrow
+entity_type: paragraph
+bundle: sponsor
+label: Eyebrow
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

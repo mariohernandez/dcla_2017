@@ -1,0 +1,19 @@
+uuid: 3b296e34-671f-44c0-8aa0-e8a4503c79f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_sponsor_body
+field_name: field_sponsor_body
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
