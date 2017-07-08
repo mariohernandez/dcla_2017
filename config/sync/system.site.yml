@@ -1,0 +1,14 @@
+uuid: 3e9516a6-e14b-43ce-a30e-a21df4ec152a
+name: 'DrupalCamp Los Angeles'
+mail: mario.hernandez@governmentbydesign.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
