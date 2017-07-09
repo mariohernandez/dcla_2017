@@ -70,11 +70,22 @@
  *   in different view modes.
  */
 #}
-{# {{ kint($node->get('field_sponsor_image')->entity) }} #}
 {# Sets variables for sponsor and social icons paragraphs #}
 {% set sponsor = content.field_sponsor_card.0['#paragraph'] %}
 {% set social_icons = content.field_sponsor_social_icons.0['#paragraph'].field_social_links %}
 
+{# Sets variables for sponsor image #}
+{% if sponsor.field_sponsor_image.entity %}
+  {% set sponsor_image = file_url(sponsor.field_sponsor_image.entity.uri.value) %}
+  {% set sponsor_image_alt = sponsor.field_sponsor_image.0.alt %}
+  {% set image_info = file_url(sponsor.field_sponsor_image.entity.uri.value) | image_style('large') %}
+{% endif %}
+
+{# {{ drupal_dump(sponsor_image_alt) }} #}
+{# {{ sponsor.field_sponsor_image }} #}
+{# {{ drupal_dump(sponsor.field_sponsor_image.entity) }} #}
+{# {{ 'public://images/card_0.png' | image_style('large') }} #}
+{# {{ sponsor_image | image_style('large') }} #}
 {# Loops through the social icons array and assigns a variable to the array
   which later will be passed to the component items #}
 {% set icons = [] %}
@@ -93,20 +104,13 @@
   {% endif %}
   {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
-
   <div{{ content_attributes }}>
     {%
       include '@dcla/sponsor/sponsor.twig' with {
-        'image': sponsor.field_sponsor_image.entity.uri.value,
+        'image': {
+          'src': 'public://images/card_0.png' | image_style('sponsor'),
+          'alt': sponsor_image_alt,
+        },
         'eyebrow': sponsor.field_sponsor_eyebrow.value,
         'heading': sponsor.field_sponsor_title.value,
         'body': sponsor.field_sponsor_body.value,
@@ -114,5 +118,4 @@
       } only
     %}
   </div>
-
 </article>

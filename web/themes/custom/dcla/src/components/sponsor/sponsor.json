@@ -2,8 +2,9 @@
   "heading": "This would not be possible without our sponsor's support",
   "body": "Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
   "eyebrow": "Silver Sponsor",
-  "image": "../assets/card.png",
-  "alt": "Sponsor alt text",
+  "image": {
+    "src": "../assets/card.png",
+    "alt": "Alt text here"
   "items": [
     {
       "icon": "twitter",
