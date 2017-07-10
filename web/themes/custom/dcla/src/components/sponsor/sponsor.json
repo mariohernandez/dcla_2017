@@ -4,7 +4,7 @@
   "eyebrow": "Silver Sponsor",
   "image": {
     "src": "../assets/card.png",
-    "alt": "Alt text here"
+    "alt": "Alt text here",
   "items": [
     {
       "icon": "twitter",

@@ -71,23 +71,23 @@
  */
 #}
 {# Sets variables for sponsor and social icons paragraphs #}
-{% set sponsor = content.field_sponsor_card.0['#paragraph'] %}
-{% set social_icons = content.field_sponsor_social_icons.0['#paragraph'].field_social_links %}
+{% if content.field_sponsor_card %}
+  {% set sponsor = content.field_sponsor_card.0['#paragraph'] %}
+  {% set social_icons = content.field_sponsor_social_icons.0['#paragraph'].field_social_links %}
+{% endif %}
 
 {# Sets variables for sponsor image #}
 {% if sponsor.field_sponsor_image.entity %}
-  {% set sponsor_image = file_url(sponsor.field_sponsor_image.entity.uri.value) %}
+  {# {% set sponsor_image = file_url(sponsor.field_sponsor_image.entity.uri.value) %} #}
   {% set sponsor_image_alt = sponsor.field_sponsor_image.0.alt %}
-  {% set image_info = file_url(sponsor.field_sponsor_image.entity.uri.value) | image_style('large') %}
+
+    {# Using twig_tweak module to get image style filter #}
+  {# {% set image_path = sponsor_image_src | image_style('sponsor') %} #}
+  {% set sponsor_image = 'public://images/card_0.png' | image_style('sponsor') %}
 {% endif %}
 
-{# {{ drupal_dump(sponsor_image_alt) }} #}
-{# {{ sponsor.field_sponsor_image }} #}
-{# {{ drupal_dump(sponsor.field_sponsor_image.entity) }} #}
-{# {{ 'public://images/card_0.png' | image_style('large') }} #}
-{# {{ sponsor_image | image_style('large') }} #}
 {# Loops through the social icons array and assigns a variable to the array
-  which later will be passed to the component items #}
+  which later will be passed to the component include #}
 {% set icons = [] %}
 {% for icon in social_icons %}
     {% set url = icon.uri %}
@@ -108,7 +108,7 @@
     {%
       include '@dcla/sponsor/sponsor.twig' with {
         'image': {
-          'src': 'public://images/card_0.png' | image_style('sponsor'),
+          'src': sponsor_image,
           'alt': sponsor_image_alt,
         },
         'eyebrow': sponsor.field_sponsor_eyebrow.value,
