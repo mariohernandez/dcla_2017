@@ -39,26 +39,15 @@
  */
 #}
 
-{%
-  set icons = [
-    {
-      url: content.field_social_links.0['#url'].uri,
-      icon: content.field_social_links.0['#title'],
-    },
-    {
-      url: content.field_social_links.1['#url'].uri,
-      icon: content.field_social_links.1['#title'],
-    },
-    {
-      url: content.field_social_links.2['#url'].uri,
-      icon: content.field_social_links.2['#title'],
-    },
-    {
-      url: content.field_social_links.3['#url'].uri,
-      icon: content.field_social_links.3['#title'],
-    }
-  ]
-%}
+{# Creates variable from icons array and passes it to
+component include as 'icons'. #}
+{% set icons = [] %}
+{% for icon in content.field_social_links['#items'] %}
+    {% set url = icon.uri %}
+    {% set icon = icon.title %}
+    {% set icons = icons|merge([{'url': url, 'icon': icon}]) %}
+{% endfor %}
+
 {%
   set classes = [
     'paragraph',

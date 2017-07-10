@@ -89,9 +89,9 @@
 {# Loops through the social icons array and assigns a variable to the array
   which later will be passed to the component items #}
 {% set icons = [] %}
-{% for social_icon in social_icons %}
-    {% set url = social_icon.uri %}
-    {% set icon = social_icon.title %}
+{% for icon in social_icons %}
+    {% set url = icon.uri %}
+    {% set icon = icon.title %}
     {% set icons = icons|merge([{'url': url, 'icon': icon}]) %}
 {% endfor %}
 
