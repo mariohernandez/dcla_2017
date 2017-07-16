@@ -1,0 +1,22 @@
+uuid: 62bc8aa4-966a-4651-826f-38a11f529156
+langcode: en
+status: true
+dependencies:
+  theme:
+    - meetup
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: meetup_local_tasks
+theme: meetup
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

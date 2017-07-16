@@ -1,0 +1,7 @@
+uuid: c64cc171-563e-4544-b84b-7a7f99480661
+langcode: en
+status: true
+dependencies: {  }
+id: card
+label: Card
+behavior_plugins: {  }

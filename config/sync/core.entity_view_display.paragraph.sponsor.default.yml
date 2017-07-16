@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.sponsor.field_sponsor_eyebrow
     - field.field.paragraph.sponsor.field_sponsor_image
     - field.field.paragraph.sponsor.field_sponsor_title
+    - image.style.sponsor
     - paragraphs.paragraphs_type.sponsor
   module:
     - image
@@ -35,7 +36,7 @@ content:
     weight: 5
     label: hidden
     settings:
-      image_style: ''
+      image_style: sponsor
       image_link: ''
     third_party_settings: {  }
     type: image

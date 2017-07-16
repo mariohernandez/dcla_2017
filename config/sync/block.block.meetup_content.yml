@@ -1,0 +1,22 @@
+uuid: f1cf7309-d5f9-4ade-a743-8c83d15ca7f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - meetup
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: meetup_content
+theme: meetup
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

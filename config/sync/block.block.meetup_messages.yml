@@ -1,0 +1,22 @@
+uuid: 1aed6131-61fa-4f6b-af00-38ea88c26983
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - meetup
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: meetup_messages
+theme: meetup
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

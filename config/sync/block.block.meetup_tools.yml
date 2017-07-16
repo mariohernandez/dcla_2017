@@ -1,0 +1,26 @@
+uuid: a5d1b6c3-a60a-4e25-bede-9b71d881a0b3
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - meetup
+_core:
+  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
+id: meetup_tools
+theme: meetup
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

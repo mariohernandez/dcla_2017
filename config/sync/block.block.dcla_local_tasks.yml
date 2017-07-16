@@ -1,0 +1,22 @@
+uuid: d6df12a9-f4c9-4305-b3c3-31c8a9087b2c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - dcla
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: dcla_local_tasks
+theme: dcla
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

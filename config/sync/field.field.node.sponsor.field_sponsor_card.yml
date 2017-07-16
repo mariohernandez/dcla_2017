@@ -1,0 +1,33 @@
+uuid: 47560002-66aa-4012-9ed4-3e2acd3920da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_card
+    - node.type.sponsor
+    - paragraphs.paragraphs_type.sponsor
+  module:
+    - entity_reference_revisions
+id: node.sponsor.field_sponsor_card
+field_name: field_sponsor_card
+entity_type: node
+bundle: sponsor
+label: Card
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      sponsor: sponsor
+    target_bundles_drag_drop:
+      social_icons:
+        weight: 3
+        enabled: false
+      sponsor:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

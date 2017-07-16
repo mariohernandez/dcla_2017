@@ -1,0 +1,33 @@
+uuid: c32e1933-24bc-4905-bc66-a8514615d1d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_social_icons
+    - node.type.sponsor
+    - paragraphs.paragraphs_type.social_icons
+  module:
+    - entity_reference_revisions
+id: node.sponsor.field_sponsor_social_icons
+field_name: field_sponsor_social_icons
+entity_type: node
+bundle: sponsor
+label: 'Social Icons'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social_icons: social_icons
+    target_bundles_drag_drop:
+      social_icons:
+        enabled: true
+        weight: 3
+      sponsor:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

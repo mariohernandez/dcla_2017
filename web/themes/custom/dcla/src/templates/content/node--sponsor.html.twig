@@ -85,7 +85,7 @@
     {# Using twig_tweak module to get image style filter #}
     {# @TODO:  Find fix for dynamic uri + Image style.  Currently image_style filter laters image uri. #}
   {# {% set sponsor_image = file_url(sponsor.field_sponsor_image.entity.uri.value) | image_style('sponsor') %} #}
-  {% set sponsor_image = 'public://images/card_0.png' | image_style('sponsor') %}
+  {% set sponsor_image = sponsor.field_sponsor_image.entity.uri.value | image_style('sponsor') %}
 {% endif %}
 
 {# Loops through the social icons array and assigns a variable to the array

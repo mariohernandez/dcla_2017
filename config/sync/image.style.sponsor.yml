@@ -1,0 +1,14 @@
+uuid: 4b447770-7fd7-4d98-a2e0-6bed7904f63c
+langcode: en
+status: true
+dependencies: {  }
+name: sponsor
+label: Sponsor
+effects:
+  a7e43a96-3061-4536-a750-3590a52d0bf8:
+    uuid: a7e43a96-3061-4536-a750-3590a52d0bf8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 540
+      height: 700

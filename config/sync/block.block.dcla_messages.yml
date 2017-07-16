@@ -1,0 +1,22 @@
+uuid: 0b0be6f8-40f5-40e8-945c-01cbb171aaf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcla
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: dcla_messages
+theme: dcla
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 922bd1fa-68ff-4b39-925e-9a2f2d6a88b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcla
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: dcla_breadcrumbs
+theme: dcla
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

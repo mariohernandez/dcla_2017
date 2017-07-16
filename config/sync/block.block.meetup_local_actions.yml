@@ -1,0 +1,20 @@
+uuid: 14e8d309-dbdb-4308-9114-1fc12ff5330b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - meetup
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: meetup_local_actions
+theme: meetup
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

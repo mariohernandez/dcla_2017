@@ -1,0 +1,22 @@
+uuid: 27d747d5-3aae-4e1d-a65a-4912bb96b0f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcla
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: dcla_content
+theme: dcla
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

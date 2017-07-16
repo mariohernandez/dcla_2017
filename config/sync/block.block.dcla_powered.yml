@@ -1,0 +1,22 @@
+uuid: 4c125186-26f0-41e8-8125-4a069c026a28
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - dcla
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: dcla_powered
+theme: dcla
+region: header
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

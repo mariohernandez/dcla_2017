@@ -1,0 +1,22 @@
+uuid: ad1b1128-24b5-437f-aad2-3a3f0ea4e4ff
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sponsor.field_sponsor_card
+    - field.field.node.sponsor.field_sponsor_social_icons
+    - node.type.sponsor
+  module:
+    - user
+id: node.sponsor.teaser
+targetEntityType: node
+bundle: sponsor
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_sponsor_card: true
+  field_sponsor_social_icons: true

@@ -1,0 +1,22 @@
+uuid: f2ffd6ea-3203-4d25-9870-5e8376b483fe
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - dcla
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: dcla_search
+theme: dcla
+region: header
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }
