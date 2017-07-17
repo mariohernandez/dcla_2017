@@ -1,7 +1,8 @@
 {
   "eyebrow": "Platinum",
-  "icon": "instagram",
+  "icon": "stack",
   "title": "Stauffer",
   "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.",
-  "more": "#"
+  "more": "#",
+  "moreText": "Learn more <span>&#x279D;</span>"
 }

@@ -70,7 +70,7 @@
  *   in different view modes.
  */
 #}
-{{ kint(content.field_sponsors['#items'].entity.field_card_link) }}
+
 {# Sets variables for sponsor and social icons paragraphs #}
 {% if content.field_sponsor_social_icons %}
   {% set social_icons = content.field_sponsor_social_icons.0['#paragraph'].field_social_links %}
@@ -100,19 +100,12 @@
   {% endfor %}
 {% endif %}
 
+{# Appends class to main featured sponsors node wrapper #}
 {% set class = [
   'featured-sponsors__wrapper',
   ]
 %}
 <section{{ attributes.addClass(class) }}>
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-
   <div{{ content_attributes }}>
     {%
       include '@dcla/featured-sponsors/featured-sponsors.twig' with {

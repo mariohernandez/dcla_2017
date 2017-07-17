@@ -2,27 +2,27 @@
   "items": [
     {
       "eyebrow": "Platinum",
-      "icon": "instagram",
+      "icon": "stack",
       "title": "Stauffer",
       "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.",
       "more": "#",
-      "moreText": "Learn more"
+      "moreText": "Learn more <span>&#x279D;</span>"
     },
     {
       "eyebrow": "Gold",
-      "icon": "facebook",
+      "icon": "meter",
       "title": "GBD",
       "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.",
       "more": "#",
-      "moreText": "Learn more"
+      "moreText": "Learn more <span>&#x279D;</span>"
     },
     {
       "eyebrow": "Silver",
-      "icon": "twitter",
+      "icon": "display",
       "title": "Mediacurrent",
       "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.",
       "more": "#",
-      "moreText": "Learn more"
+      "moreText": "Learn more <span>&#x279D;</span>"
     }
   ]
 }

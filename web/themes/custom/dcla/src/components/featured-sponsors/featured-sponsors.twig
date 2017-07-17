@@ -17,6 +17,7 @@
     <h2 class="featured-sponsors__title">{{ title }}</h2>
     <div class="featured-sponsors__body">{{ body }}</div>
     <div class="featured-sponsors__block">
+      {# Include sponsors component #}
       {%
         include '@dcla/sponsors/sponsors.twig' with {
           'items': sponsors,
