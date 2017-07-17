@@ -129,7 +129,7 @@
   <h3 class="card__title">Stauffer</h3>
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
-    <a class="card__more--link" href="#">Learn more</a>
+    <a class="card__more--link" href="#"></a>
   </p>
 </article>
 
@@ -156,7 +156,7 @@
   &lt;h3 class=&quot;card__title&quot;&gt;{{ title }}&lt;/h3&gt;
   &lt;p class=&quot;card__body&quot;&gt;{{ body }}&lt;/p&gt;
   &lt;p class=&quot;card__more&quot;&gt;
-    &lt;a class=&quot;card__more--link&quot; href=&quot;{{ more.url }}&quot;&gt;{{ more.text }}&lt;/a&gt;
+    &lt;a class=&quot;card__more--link&quot; href=&quot;{{ more }}&quot;&gt;{{ moreText }}&lt;/a&gt;
   &lt;/p&gt;
 &lt;/article&gt;
 </code></pre>
@@ -300,7 +300,7 @@
   <h3 class="card__title">Stauffer</h3>
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
-    <a class="card__more--link" href=""></a>
+    <a class="card__more--link" href="#">Learn more</a>
   </p>
 </article>
       
@@ -318,7 +318,7 @@
   <h3 class="card__title">GBD</h3>
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
-    <a class="card__more--link" href=""></a>
+    <a class="card__more--link" href="#">Learn more</a>
   </p>
 </article>
       
@@ -336,7 +336,7 @@
   <h3 class="card__title">Mediacurrent</h3>
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
-    <a class="card__more--link" href=""></a>
+    <a class="card__more--link" href="#">Learn more</a>
   </p>
 </article>
   </div>
@@ -413,7 +413,7 @@
   <h3 class="card__title">Stauffer</h3>
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
-    <a class="card__more--link" href=""></a>
+    <a class="card__more--link" href="#">Learn more</a>
   </p>
 </article>
       
@@ -431,7 +431,7 @@
   <h3 class="card__title">GBD</h3>
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
-    <a class="card__more--link" href=""></a>
+    <a class="card__more--link" href="#">Learn more</a>
   </p>
 </article>
       
@@ -449,7 +449,7 @@
   <h3 class="card__title">Mediacurrent</h3>
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
-    <a class="card__more--link" href=""></a>
+    <a class="card__more--link" href="#">Learn more</a>
   </p>
 </article>
   </div>
@@ -776,7 +776,7 @@
   <h3 class="card__title">Stauffer</h3>
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
-    <a class="card__more--link" href=""></a>
+    <a class="card__more--link" href="#">Learn more</a>
   </p>
 </article>
       
@@ -794,7 +794,7 @@
   <h3 class="card__title">GBD</h3>
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
-    <a class="card__more--link" href=""></a>
+    <a class="card__more--link" href="#">Learn more</a>
   </p>
 </article>
       
@@ -812,7 +812,7 @@
   <h3 class="card__title">Mediacurrent</h3>
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
-    <a class="card__more--link" href=""></a>
+    <a class="card__more--link" href="#">Learn more</a>
   </p>
 </article>
   </div>
@@ -832,6 +832,8 @@
         &#039;icon&#039;: item.icon,
         &#039;title&#039;: item.title,
         &#039;body&#039;: item.body,
+        &#039;more&#039;: item.more,
+        &#039;moreText&#039;: item.moreText,
         &#039;classes&#039;: &#039;featured-sponsors__card&#039;,
       } only
     %}

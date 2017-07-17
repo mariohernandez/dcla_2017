@@ -94,8 +94,9 @@
       {% set icon = sponsor.entity.field_card_icon.value %}
       {% set title = sponsor.entity.field_card_title.value %}
       {% set body = sponsor.entity.field_card_body.value %}
-      {% set more = sponsor.entity.field_card_link %}
-      {% set sponsors = sponsors|merge([{'eyebrow': eyebrow, 'icon': icon, 'title': title, 'body': body, 'more': more}]) %}
+      {% set url = sponsor.entity.field_card_link.uri %}
+      {% set more = sponsor.entity.field_card_link.title %}
+      {% set sponsors = sponsors|merge([{'eyebrow': eyebrow, 'icon': icon, 'title': title, 'body': body, 'moreText': more, 'more': url}]) %}
   {% endfor %}
 {% endif %}
 
