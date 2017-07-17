@@ -4,8 +4,10 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.sponsor.field_sponsor_card
+    - field.field.node.sponsor.field_sponsor_body
+    - field.field.node.sponsor.field_sponsor_image
     - field.field.node.sponsor.field_sponsor_social_icons
+    - field.field.node.sponsor.field_sponsors
     - node.type.sponsor
   module:
     - user
@@ -18,5 +20,7 @@ content:
     weight: 100
     region: content
 hidden:
-  field_sponsor_card: true
+  field_sponsor_body: true
+  field_sponsor_image: true
   field_sponsor_social_icons: true
+  field_sponsors: true

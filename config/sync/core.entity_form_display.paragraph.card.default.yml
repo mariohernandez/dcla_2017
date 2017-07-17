@@ -6,8 +6,11 @@ dependencies:
     - field.field.paragraph.card.field_card_body
     - field.field.paragraph.card.field_card_eyebrow
     - field.field.paragraph.card.field_card_icon
+    - field.field.paragraph.card.field_card_link
     - field.field.paragraph.card.field_card_title
     - paragraphs.paragraphs_type.card
+  module:
+    - link
 id: paragraph.card.default
 targetEntityType: paragraph
 bundle: card
@@ -36,6 +39,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_card_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_card_title:
     weight: 2

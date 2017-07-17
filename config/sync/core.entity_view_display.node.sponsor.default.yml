@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.sponsor.field_sponsor_body
-    - field.field.node.sponsor.field_sponsor_card
     - field.field.node.sponsor.field_sponsor_image
     - field.field.node.sponsor.field_sponsor_social_icons
     - field.field.node.sponsor.field_sponsors
@@ -27,15 +26,6 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_sponsor_card:
-    type: entity_reference_revisions_entity_view
-    weight: 5
-    region: content
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
   field_sponsor_image:
     weight: 1
     label: hidden
