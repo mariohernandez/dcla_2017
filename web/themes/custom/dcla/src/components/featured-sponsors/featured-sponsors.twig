@@ -1,0 +1,26 @@
+{{ attach_library('dcla/featured-sponsors') }}
+<div class="featured-sponsors">
+  <div class="featured-sponsors__image">
+    {{ image }}
+    <div class="featured-sponsors__social-icons-block">
+      {%
+        include '@dcla/social-icons/social-icons.twig' with {
+          'items': socialIcons,
+          'classes': 'featured-sponsors__social-icons',
+        } only
+      %}
+    </div>
+  </div>
+  <div class="featured-sponsors__info">
+    <h2 class="featured-sponsors__title">{{ title }}</h2>
+    <div class="featured-sponsors__body">{{ body }}</div>
+    <div class="featured-sponsors__block">
+      {%
+        include '@dcla/sponsors/sponsors.twig' with {
+          'items': sponsors,
+          'classes': 'featured-sponsors__items',
+        } only
+      %}
+    </div>
+  </div>
+</div>

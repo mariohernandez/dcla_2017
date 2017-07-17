@@ -425,21 +425,64 @@ li {
   padding: 0;
   list-style: none; }
 
+.card {
+  border: 1px solid #bbb;
+  padding: 4rem 2rem 2rem;
+  position: relative; }
+
+.card__eyebrow {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
 .eyebrow {
   display: inline-block;
-  padding: 0.5rem 0.8rem;
+  padding: 0.6rem 1.2rem;
   line-height: 1;
-  background: #b9b9b9;
-  border: 1px solid transparent;
+  background: #464646;
   color: #FFF;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   white-space: nowrap;
-  margin-bottom: 4rem; }
+  letter-spacing: 0.15rem; }
   .eyebrow.eyebrow--light {
     background: #FFF;
     border: 1px solid lightgray;
     color: #b9b9b9; }
+
+.featured-sponsors {
+  background: #eee;
+  display: -ms-flexbox;
+  display: flex; }
+
+.featured-sponsors__image {
+  -ms-flex: 0 0 400px;
+  flex: 0 0 400px;
+  max-width: 500px;
+  position: relative; }
+
+.featured-sponsors__social-icons-block {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.featured-sponsors__info {
+  -ms-flex: 0 0 calc(100% - 400px);
+  flex: 0 0 calc(100% - 400px);
+  padding: 2rem 3rem 0; }
+
+.featured-sponsors__body {
+  margin-bottom: 3rem; }
+
+.featured-sponsors__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.featured-sponsors__card {
+  -ms-flex: 0 0 32%;
+  flex: 0 0 32%; }
 
 
 .social-icons__items {
@@ -482,3 +525,4 @@ li {
 .sponsor__heading {
   font-weight: bold;
   margin-bottom: 2rem; }
+

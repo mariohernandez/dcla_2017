@@ -1,0 +1,44 @@
+{
+  "title": "Our Featured Sponsors",
+  "body": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.",
+  "image": "<img src='../assets/card.png' alt='Featured sponsors'>",
+  "socialIcons": [
+    {
+      "icon": "twitter",
+      "url": "#"
+    },
+    {
+      "icon": "facebook",
+      "url": "#"
+    },
+    {
+      "icon": "instagram",
+      "url": "#"
+    },
+    {
+      "icon": "youtube",
+      "url": "#"
+    }
+  ],
+  "sponsors": [
+    {
+      "eyebrow": "Platinum",
+      "icon": "instagram",
+      "title": "Stauffer",
+      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod."
+    },
+    {
+      "eyebrow": "Gold",
+      "icon": "facebook",
+      "title": "GBD",
+      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod."
+    },
+    {
+      "eyebrow": "Silver",
+      "icon": "twitter",
+      "title": "Mediacurrent",
+      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod."
+    }
+  ],
+  "classes": ""
+}

@@ -1,0 +1,47 @@
+// Featured Sponsors
+//
+// This is the featured-sponsors component.
+//
+// .featured-sponsors--short - A variation of featured-sponsors with all elements.
+//
+// Markup: featured-sponsors.twig
+//
+// Style guide: Components.featured-sponsors
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.featured-sponsors {
+  background: $color-gallery;
+  display: flex;
+}
+
+.featured-sponsors__image {
+  flex: 0 0 400px;
+  max-width: 500px;
+  position: relative;
+}
+
+.featured-sponsors__social-icons-block {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.featured-sponsors__info {
+  flex: 0 0 calc(100% - 400px);
+  padding: 2rem 3rem 0;
+}
+
+.featured-sponsors__body {
+  margin-bottom: 3rem;
+}
+
+.featured-sponsors__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-sponsors__card {
+  flex: 0 0 32%;
+}

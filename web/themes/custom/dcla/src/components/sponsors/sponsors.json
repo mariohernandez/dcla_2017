@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "eyebrow": "Platinum",
+      "icon": "instagram",
+      "title": "Stauffer",
+      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod."
+    },
+    {
+      "eyebrow": "Gold",
+      "icon": "facebook",
+      "title": "GBD",
+      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod."
+    },
+    {
+      "eyebrow": "Silver",
+      "icon": "twitter",
+      "title": "Mediacurrent",
+      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod."
+    }
+  ]
+}

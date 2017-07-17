@@ -30,17 +30,33 @@ global:
 #     - dcla/clearfix
 #     - dcla/visually-hidden
 
+card:
+  css:
+    component:
+      dist/css/card.css: {}
+  dependencies:
+    - dcla/eyebrow
+
 eyebrow:
   css:
     component:
       dist/css/eyebrow.css: {}
+
+featured-sponsors:
+  css:
+    component:
+      dist/css/featured-sponsors.css: {}
+  dependencies:
+    - dcla/sponsors
 
 social-icons:
   css:
     component:
       dist/css/social-icons.css: {}
 
-sponsor:
+sponsors:
   css:
     component:
-      dist/css/sponsor.css: {}
+      dist/css/sponsors.css: {}
+  dependencies:
+    - dcla/card

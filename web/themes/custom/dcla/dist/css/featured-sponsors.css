@@ -1,0 +1,33 @@
+.featured-sponsors {
+  background: #eee;
+  display: -ms-flexbox;
+  display: flex; }
+
+.featured-sponsors__image {
+  -ms-flex: 0 0 400px;
+  flex: 0 0 400px;
+  max-width: 500px;
+  position: relative; }
+
+.featured-sponsors__social-icons-block {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.featured-sponsors__info {
+  -ms-flex: 0 0 calc(100% - 400px);
+  flex: 0 0 calc(100% - 400px);
+  padding: 2rem 3rem 0; }
+
+.featured-sponsors__body {
+  margin-bottom: 3rem; }
+
+.featured-sponsors__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.featured-sponsors__card {
+  -ms-flex: 0 0 32%;
+  flex: 0 0 32%; }

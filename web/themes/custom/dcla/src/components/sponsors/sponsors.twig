@@ -1,0 +1,14 @@
+{{ attach_library('dcla/sponsors') }}
+<div class="{{ classes|default('') }}">
+  {% for item in items %}
+    {%
+      include '@dcla/card/card.twig' with {
+        'eyebrow': item.eyebrow,
+        'icon': item.icon,
+        'title': item.title,
+        'body': item.body,
+        'classes': 'featured-sponsors__card',
+      } only
+    %}
+  {% endfor %}
+</div>

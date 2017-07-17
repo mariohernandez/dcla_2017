@@ -1,0 +1,9 @@
+.card {
+  border: 1px solid #bbb;
+  padding: 4rem 2rem 2rem;
+  position: relative; }
+
+.card__eyebrow {
+  position: absolute;
+  left: 0;
+  top: 0; }
