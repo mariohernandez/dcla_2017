@@ -16,21 +16,32 @@
   display: flex;
 }
 
+.featured-sponsors__wrapper {
+  margin-bottom: 8rem;
+}
+
 .featured-sponsors__image {
+  line-height: 0.8;
+  overflow: hidden;
   flex: 0 0 400px;
-  max-width: 500px;
-  position: relative;
+  background: linear-gradient(#B5EBEB, #5DAC5D);
 }
 
-.featured-sponsors__social-icons-block {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.featured-sponsors__social-icons {
+  background: $color-black;
+  padding: 1rem 2.5rem;
+  line-height: 1;
+  justify-content: space-around;
+
+  .social-icons__item {
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.featured-sponsors__info {
+.featured-sponsors__right {
   flex: 0 0 calc(100% - 400px);
-  padding: 2rem 3rem 0;
+  padding: 2rem 3rem;
 }
 
 .featured-sponsors__body {
@@ -44,4 +55,5 @@
 
 .featured-sponsors__card {
   flex: 0 0 32%;
+  border-radius: 0 4px 4px;
 }

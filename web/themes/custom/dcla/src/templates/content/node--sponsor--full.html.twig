@@ -70,53 +70,40 @@
  *   in different view modes.
  */
 #}
-{# {{ kint(content.field_sponsors.0['#paragraph']) }} #}
-{# {% set sponsors = content.field_sponsors.0['#paragraph'] %} #}
-
+{{ kint(content.field_sponsors['#items'].entity.field_card_link) }}
 {# Sets variables for sponsor and social icons paragraphs #}
 {% if content.field_sponsor_social_icons %}
   {% set social_icons = content.field_sponsor_social_icons.0['#paragraph'].field_social_links %}
+
+  {# Loops through the social icons array and assigns a variable to the array
+    which later will be passed to the component include #}
+  {% set icons = [] %}
+  {% for icon in social_icons %}
+    {% set url = icon.uri %}
+    {% set icon = icon.title %}
+    {% set icons = icons|merge([{'url': url, 'icon': icon}]) %}
+  {% endfor %}
 {% endif %}
 
-{# Sets variables for sponsor and social icons paragraphs #}
-{# {% if content.field_sponsors %}
-  {% set sponsors = content.field_sponsors.0['#paragraph'] %}
-{% endif %} #}
-
-{# Sets variables for sponsor image #}
-{% if sponsor.field_sponsor_image.entity %}
-  {# Using twig_tweak module to get image style filter #}
-  {% set sponsor_image = sponsor.field_sponsor_image.entity.uri.value | image_style('sponsor') %}
-  {% set sponsor_image_alt = sponsor.field_sponsor_image.0.alt %}
-{% endif %}
-
-{# Loops through the social icons array and assigns a variable to the array
+{# Loops through the sponsors array and assigns a variable to the array
   which later will be passed to the component include #}
-{% set icons = [] %}
-{% for icon in social_icons %}
-  {% set url = icon.uri %}
-  {% set icon = icon.title %}
-  {% set icons = icons|merge([{'url': url, 'icon': icon}]) %}
-{% endfor %}
+{% if content.field_sponsors %}
+  {% set sponsors = [] %}
+  {% for sponsor in content.field_sponsors['#items'] %}
+      {% set eyebrow = sponsor.entity.field_card_eyebrow.value %}
+      {% set icon = sponsor.entity.field_card_icon.value %}
+      {% set title = sponsor.entity.field_card_title.value %}
+      {% set body = sponsor.entity.field_card_body.value %}
+      {% set more = sponsor.entity.field_card_link %}
+      {% set sponsors = sponsors|merge([{'eyebrow': eyebrow, 'icon': icon, 'title': title, 'body': body, 'more': more}]) %}
+  {% endfor %}
+{% endif %}
 
-{# {% set featuredSponsors = [] %}
-{% for sponsor in sponsors %}
-    {% set eyebrow = sponsor.field_card_eyebrow %}
-    {% set icon = sponsor.field_card_icon %}
-    {% set title = sponsor.field_card_title %}
-    {% set body = sponsor.field_card_body %}
-    {% set featuredSponsors = featuredSponsors|merge([{'eyebrow': eyebrow, 'icon': icon, 'title': title, 'body': body}]) %}
-{% endfor %} #}
-{% set sponsors = [] %}
-{% for sponsor in content.field_sponsors['#items'] %}
-    {% set eyebrow = sponsor.entity.field_card_eyebrow.value %}
-    {% set icon = sponsor.entity.field_card_icon.value %}
-    {% set title = sponsor.entity.field_card_title.0.title %}
-    {% set body = sponsor.entity.field_card_body.0.value %}
-    {% set sponsors = sponsors|merge([{'eyebrow': eyebrow, 'icon': icon, 'title': title, 'body': body}]) %}
-{% endfor %}
-
-<section{{ attributes }}>
+{% set class = [
+  'featured-sponsors__wrapper',
+  ]
+%}
+<section{{ attributes.addClass(class) }}>
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}>
@@ -135,6 +122,5 @@
         'sponsors': sponsors,
       } only
     %}
-    {# {{ content }} #}
   </div>
 </section>

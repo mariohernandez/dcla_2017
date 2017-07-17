@@ -25,19 +25,31 @@
       "eyebrow": "Platinum",
       "icon": "instagram",
       "title": "Stauffer",
-      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod."
+      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.",
+      "more": {
+        "url": "#",
+        "text": "Learn more"
+      }
     },
     {
       "eyebrow": "Gold",
       "icon": "facebook",
       "title": "GBD",
-      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod."
+      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.",
+      "more": {
+        "url": "#",
+        "text": "Learn more"
+      }
     },
     {
       "eyebrow": "Silver",
       "icon": "twitter",
       "title": "Mediacurrent",
-      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod."
+      "body": "Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.",
+      "more": {
+        "url": "#",
+        "text": "Learn more"
+      }
     }
   ],
   "classes": ""

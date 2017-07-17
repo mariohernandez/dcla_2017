@@ -1,7 +1,6 @@
-.social-icons__items {
+.social-icons {
   display: -ms-flexbox;
-  display: flex;
-  margin: 2rem 0 0; }
+  display: flex; }
 
 .social-icons__item {
   margin: 0 1rem; }
@@ -11,3 +10,6 @@
 .social-icons__icon {
   width: 32px;
   height: 32px; }
+
+.social-icons--light svg {
+  fill: #ddd; }

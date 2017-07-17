@@ -1,5 +1,6 @@
 {% import '@dcla/icons/icons.twig' as icons %}
 {{ attach_library('dcla/card') }}
+
 <article class="card {{ classes|default('') }}">
   {%
     include '@dcla/eyebrow/eyebrow.twig' with {
@@ -13,4 +14,7 @@
   </span>
   <h3 class="card__title">{{ title }}</h3>
   <p class="card__body">{{ body }}</p>
+  <p class="card__more">
+    <a class="card__more--link" href="{{ more.url }}">{{ more.text }}</a>
+  </p>
 </article>
