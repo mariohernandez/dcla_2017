@@ -14,6 +14,10 @@
 .featured-sponsors {
   background: $color-gallery;
   display: flex;
+
+  &.featured-sponsors__teaser {
+    background: transparent;
+  }
 }
 
 .featured-sponsors__wrapper {
@@ -42,6 +46,10 @@
 .featured-sponsors__right {
   flex: 0 0 calc(100% - 400px);
   padding: 2rem 3rem;
+
+  .featured-sponsors__teaser & {
+    flex: 0 0 100%;
+  }
 }
 
 .featured-sponsors__body {
@@ -56,4 +64,9 @@
 .featured-sponsors__card {
   flex: 0 0 32%;
   border-radius: 0 4px 4px;
+  background: $color-gallery;
+
+  .featured-sponsors__teaser & {
+    padding-top: 2rem;
+  }
 }

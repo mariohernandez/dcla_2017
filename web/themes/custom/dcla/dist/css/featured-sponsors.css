@@ -2,6 +2,8 @@
   background: #eee;
   display: -ms-flexbox;
   display: flex; }
+  .featured-sponsors.featured-sponsors__teaser {
+    background: transparent; }
 
 .featured-sponsors__wrapper {
   margin-bottom: 8rem; }
@@ -27,6 +29,9 @@
   -ms-flex: 0 0 calc(100% - 400px);
   flex: 0 0 calc(100% - 400px);
   padding: 2rem 3rem; }
+  .featured-sponsors__teaser .featured-sponsors__right {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
 
 .featured-sponsors__body {
   margin-bottom: 3rem; }
@@ -40,4 +45,7 @@
 .featured-sponsors__card {
   -ms-flex: 0 0 32%;
   flex: 0 0 32%;
-  border-radius: 0 4px 4px; }
+  border-radius: 0 4px 4px;
+  background: #eee; }
+  .featured-sponsors__teaser .featured-sponsors__card {
+    padding-top: 2rem; }
