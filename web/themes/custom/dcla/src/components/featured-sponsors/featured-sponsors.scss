@@ -13,7 +13,11 @@
 
 .featured-sponsors {
   background: $color-gallery;
-  display: flex;
+  margin: 5rem 0 10rem;
+
+  @include breakpoint($bp-sm) {
+    display: flex;
+  }
 
   &.featured-sponsors__teaser {
     background: transparent;
@@ -29,6 +33,10 @@
   overflow: hidden;
   flex: 0 0 400px;
   background: linear-gradient(#B5EBEB, #5DAC5D);
+
+  img {
+    width: 100%;
+  }
 }
 
 .featured-sponsors__social-icons {
@@ -43,6 +51,29 @@
   }
 }
 
+.featured-sponsors__left {
+  position: relative;
+}
+
+.featured-sponsors__intro {
+  position: absolute;
+  margin: 0 2rem;
+  padding: 2rem;
+  top: 20%;
+  box-shadow: 0 0 40px 5px rgba($color-black, 0.12);
+  border: 1px solid $color-gallery;
+  background: rgba($color-white, 0.6);
+
+  @include breakpoint($bp-xxsm) {
+    margin: 0 5rem;
+    top: 15%;
+  }
+
+  @include breakpoint($bp-sm) {
+    margin: 0 2rem;
+  }
+}
+
 .featured-sponsors__right {
   flex: 0 0 calc(100% - 400px);
   padding: 2rem 3rem;
@@ -52,19 +83,38 @@
   }
 }
 
-.featured-sponsors__body {
-  margin-bottom: 3rem;
-}
-
 .featured-sponsors__items {
-  display: flex;
-  justify-content: space-between;
+
+  @include breakpoint($bp-sm) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .featured-sponsors__card {
-  flex: 0 0 32%;
   border-radius: 0 4px 4px;
-  background: $color-gallery;
+  margin-bottom: 2rem;
+  color: $color-alto;
+  font-weight: 300;
+
+  @include breakpoint($bp-sm) {
+    flex: 0 0 48%;
+
+    &:last-child {
+      flex: 0 0 100%;
+    }
+  }
+
+  @include breakpoint($bp-lg) {
+    margin-top: 5rem;
+    flex: 0 0 32%;
+
+    &:last-child {
+      flex: 0 0 32%;
+    }
+  }
 
   .featured-sponsors__teaser & {
     padding-top: 2rem;

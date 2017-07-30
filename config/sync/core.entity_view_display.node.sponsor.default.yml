@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.sponsor.field_sponsor_body
     - field.field.node.sponsor.field_sponsor_image
     - field.field.node.sponsor.field_sponsor_social_icons
+    - field.field.node.sponsor.field_sponsor_subheading
     - field.field.node.sponsor.field_sponsors
     - image.style.sponsor
     - node.type.sponsor
@@ -20,14 +21,14 @@ bundle: sponsor
 mode: default
 content:
   field_sponsor_body:
-    weight: 0
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_sponsor_image:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       image_style: sponsor
@@ -37,15 +38,6 @@ content:
     region: content
   field_sponsor_social_icons:
     type: entity_reference_revisions_entity_view
-    weight: 2
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    region: content
-  field_sponsors:
-    type: entity_reference_revisions_entity_view
     weight: 3
     label: hidden
     settings:
@@ -53,8 +45,25 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  links:
+  field_sponsor_subheading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sponsors:
+    type: entity_reference_revisions_entity_view
     weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }

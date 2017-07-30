@@ -8,6 +8,15 @@
         </div>
       {% endif %}
 
+      <div class="featured-sponsors__intro">
+        {% if subheading %}
+          <h2 class="featured-sponsors__subheading">{{ subheading }}</h2>
+        {% endif %}
+        {% if body %}
+          <div class="featured-sponsors__body">{{ body }}</div>
+        {% endif %}
+      </div>
+
       {# Include social media icons #}
       {% if socialIcons %}
         {%
@@ -20,12 +29,6 @@
     </div>
   {% endif %}
   <div class="featured-sponsors__right">
-    {% if title %}
-      <h2 class="featured-sponsors__title">{{ title }}</h2>
-    {% endif %}
-    {% if body %}
-      <div class="featured-sponsors__body">{{ body }}</div>
-    {% endif %}
     <div class="featured-sponsors__block">
       {# Include sponsors component #}
       {%

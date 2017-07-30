@@ -11,10 +11,13 @@
     %}
   {% endif %}
 
-  <span class="card__icon">
-    {{ icons.get(icon, 'card__icon--item') }}
-  </span>
-  <h3 class="card__title">{{ title }}</h3>
+  <div class="card__brand">
+    <span class="card__icon">
+      {{ icons.get(icon, 'card__icon--item') }}
+    </span>
+    <h3 class="card__title">{{ title }}</h3>
+  </div>
+
   <p class="card__body">{{ body }}</p>
   <p class="card__more">
     <a class="card__more--link" href="{{ more }}">{{ moreText }}</a>

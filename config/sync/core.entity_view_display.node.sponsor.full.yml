@@ -1,9 +1,9 @@
-uuid: 2af57f8c-e8eb-4cce-9a76-b2c51d650d2c
+uuid: 073881e9-b1a5-43d1-9be3-8eab352c16f9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
-    - core.entity_view_mode.node.sponsor_minimum
+    - core.entity_view_mode.node.full
     - field.field.node.sponsor.field_sponsor_body
     - field.field.node.sponsor.field_sponsor_image
     - field.field.node.sponsor.field_sponsor_social_icons
@@ -11,12 +11,13 @@ dependencies:
     - node.type.sponsor
   module:
     - entity_reference_revisions
+    - image
     - text
     - user
-id: node.sponsor.sponsor_minimum
+id: node.sponsor.full
 targetEntityType: node
 bundle: sponsor
-mode: sponsor_minimum
+mode: full
 content:
   field_sponsor_body:
     type: text_default
@@ -25,28 +26,36 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_sponsor_social_icons:
-    type: entity_reference_revisions_entity_view
-    weight: 2
-    region: content
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-  field_sponsors:
-    type: entity_reference_revisions_entity_view
+  field_sponsor_image:
+    type: image
     weight: 1
     region: content
     label: hidden
     settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_sponsor_social_icons:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-  links:
+    region: content
+  field_sponsors:
+    type: entity_reference_revisions_entity_view
     weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  field_sponsor_image: true
+hidden: {  }

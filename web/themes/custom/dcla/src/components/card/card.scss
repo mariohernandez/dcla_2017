@@ -13,6 +13,11 @@
   border: 1px solid $color-silver;
   padding: 5rem 2rem 2rem;
   position: relative;
+  background: $color-tundora;
+}
+
+.card__brand {
+  text-align: center;
 }
 
 .card__eyebrow {
@@ -30,5 +35,5 @@
 }
 
 .card__icon--item {
-  fill: $color-tundora;
+  fill: $color-silver;
 }

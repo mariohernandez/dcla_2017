@@ -105,12 +105,13 @@
   'featured-sponsors__wrapper',
   ]
 %}
+
 <section{{ attributes.addClass(class) }}>
   <div{{ content_attributes }}>
     {%
       include '@dcla/featured-sponsors/featured-sponsors.twig' with {
         'image': content.field_sponsor_image,
-        'title': label,
+        'subheading': content.field_sponsor_subheading,
         'body': content.field_sponsor_body,
         'socialIcons': icons,
         'sponsors': sponsors,

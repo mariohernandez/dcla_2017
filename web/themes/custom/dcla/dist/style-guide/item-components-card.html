@@ -73,11 +73,14 @@
   Platinum
 </div>
   
-  <span class="card__icon">
-      <svg aria-hidden="true" role="img" class="card__icon--item" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>stack</title><path d="M64 20L32 4 0 20l32 16 32-16zM32 9.311L53.379 20 32 30.689 10.621 20 32 9.311zm25.59 19.484L64 32 32 48 0 32l6.41-3.205L32 41.59zm0 12L64 44 32 60 0 44l6.41-3.205L32 53.59z"/></svg>
+  <div class="card__brand">
+    <span class="card__icon">
+        <svg aria-hidden="true" role="img" class="card__icon--item" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><title>stack</title><path d="M64 20L32 4 0 20l32 16 32-16zM32 9.311L53.379 20 32 30.689 10.621 20 32 9.311zm25.59 19.484L64 32 32 48 0 32l6.41-3.205L32 41.59zm0 12L64 44 32 60 0 44l6.41-3.205L32 53.59z"/></svg>
 
-  </span>
-  <h3 class="card__title">Stauffer</h3>
+    </span>
+    <h3 class="card__title">Stauffer</h3>
+  </div>
+
   <p class="card__body">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.</p>
   <p class="card__more">
     <a class="card__more--link" href="#">Learn more <span>&#x279D;</span></a>
@@ -103,10 +106,13 @@
     %}
   {% endif %}
 
-  &lt;span class=&quot;card__icon&quot;&gt;
-    {{ icons.get(icon, &#039;card__icon--item&#039;) }}
-  &lt;/span&gt;
-  &lt;h3 class=&quot;card__title&quot;&gt;{{ title }}&lt;/h3&gt;
+  &lt;div class=&quot;card__brand&quot;&gt;
+    &lt;span class=&quot;card__icon&quot;&gt;
+      {{ icons.get(icon, &#039;card__icon--item&#039;) }}
+    &lt;/span&gt;
+    &lt;h3 class=&quot;card__title&quot;&gt;{{ title }}&lt;/h3&gt;
+  &lt;/div&gt;
+
   &lt;p class=&quot;card__body&quot;&gt;{{ body }}&lt;/p&gt;
   &lt;p class=&quot;card__more&quot;&gt;
     &lt;a class=&quot;card__more--link&quot; href=&quot;{{ more }}&quot;&gt;{{ moreText }}&lt;/a&gt;

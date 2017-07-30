@@ -1,0 +1,50 @@
+uuid: 59f09821-3c3c-4929-a155-b43d59f726dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.minimal
+    - field.field.paragraph.card.field_card_body
+    - field.field.paragraph.card.field_card_eyebrow
+    - field.field.paragraph.card.field_card_icon
+    - field.field.paragraph.card.field_card_link
+    - field.field.paragraph.card.field_card_title
+    - paragraphs.paragraphs_type.card
+  module:
+    - link
+id: paragraph.card.minimal
+targetEntityType: paragraph
+bundle: card
+mode: minimal
+content:
+  field_card_icon:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_card_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_card_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_card_body: true
+  field_card_eyebrow: true
