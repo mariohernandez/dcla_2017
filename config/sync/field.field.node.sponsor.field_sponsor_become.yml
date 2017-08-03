@@ -1,0 +1,28 @@
+uuid: be765ec7-c0e9-41f2-bee8-a32c726d365d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor_become
+    - node.type.sponsor
+  module:
+    - link
+id: node.sponsor.field_sponsor_become
+field_name: field_sponsor_become
+entity_type: node
+bundle: sponsor
+label: 'Become a sponsor'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'http://google.com'
+    title: 'Become a sponsor'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

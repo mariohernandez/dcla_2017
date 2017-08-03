@@ -1,0 +1,19 @@
+uuid: fb208bcc-7e23-4d0d-887b-78642d44554a
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_sponsor_become
+field_name: field_sponsor_become
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
