@@ -45,16 +45,16 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-components-eyebrow" class="kss-section kss-depth-2">
+                            <div id="kssref-components-button" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-components-eyebrow">
-                  Eyebrow
+                <a class="kss-title__permalink" href="#kssref-components-button">
+                  Button
                 </a>
               </h2>
 
                               <div class="kss-description">
-                  <p>This is the eyebrow component. It&#39;s an example.</p>
+                  <p>This is the button component. .</p>
 
                 </div>
               
@@ -65,54 +65,16 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-
-<div class="eyebrow ">
-  Gold Sponsor
-</div>
+<a href="#" class="button button--primary">Become a sponsor</a>
 
                   </div>
                 </div>
 
-                                <div class="kss-modifier">
-                  <div class="kss-modifier-head">
-                    <div class="kss-modifier-name">.eyebrow__platinum</div>
-                    <div class="kss-modifier-description">
-                      Platinum sponsor label.
-                    </div>
-                  </div>
-                  <div class="kss-modifier-example">
-                    
-
-<div class="eyebrow eyebrow__platinum">
-  Gold Sponsor
-</div>
-
-                  </div>
-                </div>
-                                <div class="kss-modifier">
-                  <div class="kss-modifier-head">
-                    <div class="kss-modifier-name">.eyebrow__silver</div>
-                    <div class="kss-modifier-description">
-                      Silver sponsor label.
-                    </div>
-                  </div>
-                  <div class="kss-modifier-example">
-                    
-
-<div class="eyebrow eyebrow__silver">
-  Gold Sponsor
-</div>
-
-                  </div>
-                </div>
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;dcla/eyebrow&#039;) }}
-
-&lt;div class=&quot;eyebrow {{ modifier_class }}{{ classes|default(&#039;&#039;) }}&quot;&gt;
-  {{ eyebrow }}
-&lt;/div&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;dcla/button&#039;) }}
+&lt;a href=&quot;{{ url }}&quot; class=&quot;button button--primary&quot;&gt;{{ text }}&lt;/a&gt;
 </code></pre>
                   </template>
                 </div>

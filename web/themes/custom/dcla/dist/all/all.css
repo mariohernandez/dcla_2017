@@ -430,11 +430,28 @@ li {
   padding: 0;
   list-style: none; }
 
+.button {
+  background: #009ED6;
+  color: #FFF;
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 0.12rem; }
+  .button:hover {
+    text-decoration: none;
+    color: #FFF;
+    background: #0078a3; }
+
 .card {
   border: 1px solid #bbb;
   padding: 5rem 2rem 2rem;
   position: relative;
-  background: #464646; }
+  background: #464646;
+  color: #ddd; }
 
 .card__brand {
   text-align: center; }
@@ -449,6 +466,9 @@ li {
 
 .card__more--link {
   text-decoration: none; }
+  .card__more--link:hover {
+    text-decoration: underline;
+    color: #009ED6; }
 
 .card__icon--item {
   fill: #bbb; }
@@ -463,9 +483,9 @@ li {
   font-size: 1.2rem;
   white-space: nowrap;
   letter-spacing: 0.15rem; }
-  .card:first-child .eyebrow {
+  .card:first-child .eyebrow, .eyebrow.eyebrow__platinum {
     background: #eee; }
-  .card:last-child .eyebrow {
+  .card:last-child .eyebrow, .eyebrow.eyebrow__silver {
     background: #F9F9F9; }
 
 .featured-sponsors {
@@ -541,7 +561,6 @@ li {
 .featured-sponsors__card {
   border-radius: 0 4px 4px;
   margin-bottom: 2rem;
-  color: #ddd;
   font-weight: 300; }
   @media (min-width: 55em) {
     .featured-sponsors__card {
@@ -560,6 +579,10 @@ li {
         flex: 0 0 32%; } }
   .featured-sponsors__teaser .featured-sponsors__card {
     padding-top: 2rem; }
+
+.featured-sponsors__become-one {
+  text-align: center;
+  margin-top: 4rem; }
 
 
 .social-icons {

@@ -71,7 +71,6 @@
 .featured-sponsors__card {
   border-radius: 0 4px 4px;
   margin-bottom: 2rem;
-  color: #ddd;
   font-weight: 300; }
   @media (min-width: 55em) {
     .featured-sponsors__card {
@@ -90,3 +89,7 @@
         flex: 0 0 32%; } }
   .featured-sponsors__teaser .featured-sponsors__card {
     padding-top: 2rem; }
+
+.featured-sponsors__become-one {
+  text-align: center;
+  margin-top: 4rem; }

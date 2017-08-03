@@ -14,6 +14,7 @@
   padding: 5rem 2rem 2rem;
   position: relative;
   background: $color-tundora;
+  color: $color-alto;
 }
 
 .card__brand {
@@ -32,6 +33,11 @@
 
 .card__more--link {
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: $color-blue;
+  }
 }
 
 .card__icon--item {

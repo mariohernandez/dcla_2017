@@ -100,6 +100,13 @@
   {% endfor %}
 {% endif %}
 
+{# Creates variable for become a sponsor button #}
+{% set becomeSponsor = {
+    'url': content.field_sponsor_become.0['#url'].uri,
+    'text': content.field_sponsor_become.0['#title'],
+  }
+%}
+
 {# Appends class to main featured sponsors node wrapper #}
 {% set class = [
   'featured-sponsors__wrapper',
@@ -115,6 +122,7 @@
         'body': content.field_sponsor_body,
         'socialIcons': icons,
         'sponsors': sponsors,
+        'becomeSponsor': becomeSponsor,
       } only
     %}
   </div>

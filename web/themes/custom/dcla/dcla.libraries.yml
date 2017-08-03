@@ -30,6 +30,11 @@ global:
 #     - dcla/clearfix
 #     - dcla/visually-hidden
 
+button:
+  css:
+    component:
+      dist/css/button.css: {}
+
 card:
   css:
     component:
@@ -48,6 +53,7 @@ featured-sponsors:
       dist/css/featured-sponsors.css: {}
   dependencies:
     - dcla/sponsors
+    - dcla/button
 
 social-icons:
   css:

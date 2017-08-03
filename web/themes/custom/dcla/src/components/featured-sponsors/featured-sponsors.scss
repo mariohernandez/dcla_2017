@@ -2,8 +2,6 @@
 //
 // This is the featured-sponsors component.
 //
-// .featured-sponsors--short - A variation of featured-sponsors with all elements.
-//
 // Markup: featured-sponsors.twig
 //
 // Style guide: Components.featured-sponsors
@@ -96,7 +94,6 @@
 .featured-sponsors__card {
   border-radius: 0 4px 4px;
   margin-bottom: 2rem;
-  color: $color-alto;
   font-weight: 300;
 
   @include breakpoint($bp-sm) {
@@ -119,4 +116,9 @@
   .featured-sponsors__teaser & {
     padding-top: 2rem;
   }
+}
+
+.featured-sponsors__become-one {
+  text-align: center;
+  margin-top: 4rem;
 }

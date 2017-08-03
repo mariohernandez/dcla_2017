@@ -2,7 +2,8 @@
   border: 1px solid #bbb;
   padding: 5rem 2rem 2rem;
   position: relative;
-  background: #464646; }
+  background: #464646;
+  color: #ddd; }
 
 .card__brand {
   text-align: center; }
@@ -17,6 +18,9 @@
 
 .card__more--link {
   text-decoration: none; }
+  .card__more--link:hover {
+    text-decoration: underline;
+    color: #009ED6; }
 
 .card__icon--item {
   fill: #bbb; }

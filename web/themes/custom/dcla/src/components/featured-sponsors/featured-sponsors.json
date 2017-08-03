@@ -46,5 +46,9 @@
       "moreText": "Learn more <span>&#x279D;</span>"
     }
   ],
+  "becomeSponsor": {
+    "text": "Become a sponsor",
+    "url": "#"
+  },
   "class": ""
 }
