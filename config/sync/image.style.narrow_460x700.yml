@@ -1,0 +1,16 @@
+uuid: 8dbb3e56-12ba-49ce-a83f-a556c7c5e2b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: narrow_460x700
+label: 'Narrow 460x700'
+effects:
+  f13accb9-68d7-4ee0-ab9e-9b9f59abfb53:
+    uuid: f13accb9-68d7-4ee0-ab9e-9b9f59abfb53
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 460
+      height: 700

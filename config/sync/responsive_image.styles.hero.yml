@@ -1,0 +1,30 @@
+uuid: d3424eee-7fdc-4c54-baa4-22e408cbe221
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.16_9_large_1200px
+    - image.style.16_9_medium_960px
+    - image.style.narrow_460x700
+  theme:
+    - dcla
+id: hero
+label: Hero
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 16_9_large_1200px
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: 16_9_medium_960px
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: narrow_460x700
+breakpoint_group: dcla
+fallback_image_style: 16_9_medium_960px

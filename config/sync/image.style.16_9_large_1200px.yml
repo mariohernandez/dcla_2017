@@ -1,0 +1,14 @@
+uuid: 30656667-c97c-4973-a526-91328c27fd4f
+langcode: en
+status: true
+dependencies: {  }
+name: 16_9_large_1200px
+label: '16:9 Large 1200px'
+effects:
+  db77913f-1725-4cf7-a041-7a4c24af3707:
+    uuid: db77913f-1725-4cf7-a041-7a4c24af3707
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 675
